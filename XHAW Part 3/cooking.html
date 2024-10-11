@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid Course</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.course-container {
+    background-color: #e6ebf2;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+.header-images {
+    display: flex;
+    gap: 15px;
+}
+
+.header-images img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.course-image {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.course-details {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.course-details ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.course-details ul li {
+    margin-bottom: 5px;
+}
+
+/* Select Course Button */
+.select-course {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.select-course button {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select-course button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="course-container">
+        <div class="header">
+            <a href="courses.html" class="back-btn">&#8592;</a> <!-- Link to Courses page -->
+        </div>
+        <div> <h1> Cooking</h1> </div>
+
+        <div class="content">
+            <div class="course-details">
+                <p><strong>Fees: </strong>R 750</p>
+                <p><strong>Purpose:</strong> To prepare and cook nutritious family meals</p>
+                <p><strong>Content:</strong></p>
+                <ul>
+                    <li>Nutritional requirements for a healthy body</li>
+                    <li>Types of protein, carbohydrates and vegetables</li>
+                    <li>Planning meals</li>
+                    <li>Preparation and cooking of meals</li>
+                </ul>
+
+                <img src="stethoscope.jpg" alt="Stethoscope">
+            </div>
+        </div>
+
+        <!-- Select Course Button -->
+        <div class="select-course">
+            <button onclick="selectCourse()">Select Course</button>
+        </div>
+    </div>
+
+    <script>
+        function selectCourse() {
+            alert("You have selected the First Aid course.");
+            // You can redirect to a registration page if needed
+            // window.location.href = "registration.html";
+        }
+    </script>
+</body>
+</html>

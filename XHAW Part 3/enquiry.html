@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+		<title> HomePage </title>
+		<!-- above line must be edited on the different webpages -->
+        <style>
+            *{
+             box-sizing: border-box;
+            }
+            .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+            }
+            /* Clearfix (clear floats) */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff;
+            }
+            header {
+                background:#000000;
+                color: #ffffff;
+                padding: 20px 0;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+            }
+            h1{
+                color: #000000;
+                text-align: center;
+                font-size: 50px;
+
+            }
+            h2{
+                color: #ffffff;
+
+            }
+            .h2a{
+                color: #ffff00 ;
+                text-align: left;
+            }
+            h3{
+                color: #f0e68c;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            nav a {
+                color: #ffffff;
+                text-decoration: none;
+                margin: 0 15px;
+            }
+            nav a:hover {
+                color: gold;
+            }
+            body{
+            margin:0;
+            overflow-x:hidden;
+            }
+            .container {
+                width: 100%;
+                margin: 50px auto;
+                background-color: white;
+                padding: 20px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+
+            form label {
+                display: block;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+            form input,
+            form select,
+            form textarea {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+            form textarea {
+                resize: none;
+            }
+
+            .button-container {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #5cb85c;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            button[type="reset"] {
+                background-color: #d9534f;
+            }
+
+            button:hover {
+                opacity: 0.9;
+            }
+
+            #message {
+                margin-top: 20px;
+                color: green;
+                text-align: center;
+            }
+
+            .footer{
+            background:#000000 ;
+            padding:30px 0px;
+            font-family: 'Play', sans-serif;
+            text-align:center;
+            }
+
+            .footer .row{
+            width:100%;
+            margin:1% 0%;
+            padding:0.6% 0%;
+            color:#ffffff;
+            font-size:0.8em;
+            }
+
+            .footer .row a{
+            text-decoration:none;
+            color:#ffffff;
+            transition:0.5s;
+            }
+
+            nav a:hover {
+                color: gold;
+            }
+
+            .footer .row ul{
+            width:100%;
+            }
+
+            .footer .row ul li{
+            display:inline-block;
+            margin:0px 30px;
+            }
+
+            .footer .row a i{
+            font-size:2em;
+            margin:0% 1%;
+            }
+
+            @media (max-width:720px){
+            .footer{
+            text-align:left;
+            padding:5%;
+            }
+            .footer .row ul li{
+            display:block;
+            margin:10px 0px;
+            text-align:left;
+            }
+            .footer .row a i{
+            margin:0% 3%;
+            }
+            }
+            
+            </style>
+            <div class="mycontainer">
+
+            
+	</head>
+
+	<body>
+		<!-- Header Section -->
+		<header>
+			<div id = "logo"> 					<!-- div is a divider/ section list -->
+				<img src = "./assests/E.png" alt = "Logo" width="200"  height="200">
+			</div>
+
+			<nav> 								<!-- Nav -  is nevigation -->
+				<ul> 							<!-- ul - unorderd list -->
+					<a href = "homepage.html"> Home </a>			<!-- li - orderd list -->
+					<a href = "aboutus.html"> About Us </a>
+                    <a href = "courses.html"> Courses </a>
+                    <a href = "registration.html"> Registration </a>
+                    <a href = "enquiry.html"> Enquiry </a>
+                    <a href = "contactus.html"> Contact Us </a>
+					
+				</ul>
+
+			</nav>
+		</header>
+		<!-- Main Content Section --> 		 <!-- the main is the one that change in the different webpages -->
+		<main>
+			<section id = "Summary">
+            <div>
+				<h1> School Enquiry Form </h1>
+             </div>          
+			</section>
+            
+            <section>
+                <div class="row">                  
+                    <div class="column">
+                        <form id="enquiryForm">
+                
+                            <label for="first name">First Name:</label>
+                            <input type="text" id="first name" name="first name" placeholder="Your First name"required>
+                
+                            <label for="last name">Last Name:</label>
+                            <input type="text" id="last name" name="last name" placeholder="Your Last name"required>
+                
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your email address" required>
+                
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" placeholder="Your phone number" name="phone">
+                
+                            <label for="enquiry">Enquiry:</label>
+                            <textarea id="enquiry" name="enquiry" rows="4" placeholder="Your enquiry or message" required></textarea>
+                
+                            <label for="responseMethod">Preferred Method of Response:</label>
+                            <select id="responseMethod" name="responseMethod" required>
+                                <option value="email">Email</option>
+                                <option value="phone">Phone</option>
+                            </select>
+                
+                            <div class="button-container">
+                                <button type="button" onclick="saveForm()">Save </button>
+                                <button type="reset">Reset</button>
+                            </div>
+
+                        </form>
+                        <p id="message"></p>
+                    </div>
+
+                    <div class="column">
+                        <img src="./assests/XHAW 5.jpg" alt="Classroom" style="width:100%">
+                      </div>
+                
+                    <script src="script.js"></script>
+            </section>
+			
+		</main>
+		<!-- Footer Section -->
+		<footer>
+            <div class="footer">
+                
+                <div class="row">
+                <ul>
+                    <li><a href="homepage.html">Home Page</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                </div>
+                
+                <div class="row">
+                    <p><h2>Contact Info</h2></p>
+                    <p> Email: EmpoweringTheNation@gmail.com</p>
+                    <p>Phone: +27 (555) -4567</p>
+                &copy; 2024 Empowering The Nation.edu - All rights reserved || Designed By: 
+                </div>
+		</footer>
+
+	</body>
+
+</html>

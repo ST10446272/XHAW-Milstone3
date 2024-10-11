@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+		<title> HomePage </title>
+		<!-- above line must be edited on the different webpages -->
+        <style>
+            *{
+             box-sizing: border-box;
+            }
+            .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+            }
+            /* Clearfix (clear floats) */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff;
+            }
+            header {
+                background:#000000;
+                color: #ffffff;
+                padding: 20px 0;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+            }
+            h1{
+                color: #000000;
+                text-align: center;
+                font-size: 50px;
+
+            }
+            h2{
+                color: #ffffff;
+
+            }
+            .h2a{
+                color: #000000 ;
+                text-align: left;
+            }
+            h3{
+                color: #f0e68c;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            nav a {
+                color: #ffffff;
+                text-decoration: none;
+                margin: 0 15px;
+            }
+            nav a:hover {
+                color: gold;
+            }
+            body{
+            margin:0;
+            overflow-x:hidden;
+            }
+            .courses {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 40px 0;
+            }
+            .course-section {
+                background-color: #e6ebf2;
+                padding: 20px;
+                border-radius: 10px;
+                width: 300px;
+            }
+            .course-section h3 {
+                text-align: center;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+            .course-section ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            .course-section li {
+                display: flex;
+                align-items: center;
+                margin: 15px 0;
+                font-size: 18px;
+            }
+            .footer{
+            background:#000000 ;
+            padding:30px 0px;
+            font-family: 'Play', sans-serif;
+            text-align:center;
+            }
+
+            .footer .row{
+            width:100%;
+            margin:1% 0%;
+            padding:0.6% 0%;
+            color:#ffffff;
+            font-size:0.8em;
+            }
+
+            .footer .row a{
+            text-decoration:none;
+            color:#ffffff;
+            transition:0.5s;
+            }
+            nav a:hover {
+                color: gold;
+            }
+
+            .footer .row ul{
+            width:100%;
+            }
+
+            .footer .row ul li{
+            display:inline-block;
+            margin:0px 30px;
+            }
+
+            .footer .row a i{
+            font-size:2em;
+            margin:0% 1%;
+            }
+
+            @media (max-width:720px){
+            .footer{
+            text-align:left;
+            padding:5%;
+            }
+            .footer .row ul li{
+            display:block;
+            margin:10px 0px;
+            text-align:left;
+            }
+            .footer .row a i{
+            margin:0% 3%;
+            }
+            }
+            
+            </style>
+            <div class="mycontainer">
+
+            
+	</head>
+
+	<body>
+		<!-- Header Section -->
+		<header>
+			<div id = "logo"> 					<!-- div is a divider/ section list -->
+				<img src = "./assests/E.png" alt = "Logo" width="200"  height="200">
+			</div>
+
+			<nav> 								<!-- Nav -  is nevigation -->
+				<ul> 							<!-- ul - unorderd list -->
+					<a href = "homepage.html"> Home </a>			<!-- li - orderd list -->
+					<a href = "aboutus.html"> About Us </a>
+                    <a href = "courses.html"> Courses </a>
+                    <a href = "registration.html"> Registration </a>
+                    <a href = "enquiry.html"> Enquiry </a>
+                    <a href = "contactus.html"> Contact Us </a>
+					
+				</ul>
+
+			</nav>
+		</header>
+		<!-- Main Content Section --> 		 <!-- the main is the one that change in the different webpages -->
+		<main>
+			<section>
+                <div>
+				<h1> Courses </h1>
+                </div>
+            </section>
+
+            <section class="courses">
+                <div class="course-section six-months">
+                    <h2 class="h2a">Six Months Courses</h2>
+                    <ul>
+                        <li><a href="firstaidpage.html">First Aid</a></li><br>
+                        <li><a href="sewingpage.html">Sewing</a></li><br>
+                        <li><a href="landscaping.html">Landscaping</a></li><br>
+                        <li><a href="lifeskills.html">Life Skills</a></li>
+                    </ul>
+                </div>
+        
+                <div class="course-section six-weeks">
+                    <h2 class="h2a">Six Week Courses</h2>
+                    <ul>
+                        <li><a href="childminding.html">Child Minding</a></li><br>
+                        <li><a href="cooking.html"> Cooking</a></li><br>
+                        <li><a href="gardenmainten.html">Garden Maintenance</a></li>
+                    </ul>
+                </div>
+            </section>
+                     
+<footer>
+    <div class="footer">
+        
+        <div class="row">
+        <ul>
+            <li><a href="homepage.html">Home Page</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+            <p><h2>Contact Info</h2></p>
+            <p> Email: EmpoweringTheNation@gmail.com</p>
+            <p>Phone: +27 (555) -4567</p>
+        &copy; 2024 Empowering The Nation.edu - All rights reserved || Designed By: 
+        </div>
+</footer>
+
+</body>
+
+</html>

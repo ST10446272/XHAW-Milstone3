@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+		<title> HomePage </title>
+		<!-- above line must be edited on the different webpages -->
+        <style>
+            *{
+             box-sizing: border-box;
+            }
+            .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+            }
+            /* Clearfix (clear floats) */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff;
+            }
+            header {
+                background:#000000;
+                color: #ffffff;
+                padding: 20px 0;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+            }
+            h1{
+                color: #000000;
+                text-align: center;
+                font-size: 50px;
+
+            }
+            h2{
+                color: #ffffff;
+
+            }
+            .h2a{
+                color: #000000 ;
+                text-align: left;
+            }
+            h3{
+                color: #000000;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            nav a {
+                color: #ffffff;
+                text-decoration: none;
+                margin: 0 15px;
+            }
+            nav a:hover {
+                text-decoration: underline;
+                color:gold;
+            }
+            body{
+            margin:0;
+            overflow-x:hidden;
+            }
+
+            .footer{
+            background:#000000 ;
+            padding:30px 0px;
+            font-family: 'Play', sans-serif;
+            text-align:center;
+            }
+
+            .footer .row{
+            width:100%;
+            margin:1% 0%;
+            padding:0.6% 0%;
+            color:#ffffff;
+            font-size:0.8em;
+            }
+
+            .footer .row a{
+            text-decoration:none;
+            color:#ffffff;
+            transition:0.5s;
+            }
+
+            .footer .row a:hover{
+            color:gold;
+            }
+
+            .footer .row ul{
+            width:100%;
+            }
+
+            .footer .row ul li{
+            display:inline-block;
+            margin:0px 30px;
+            }
+
+            .footer .row a i{
+            font-size:2em;
+            margin:0% 1%;
+            }
+
+            @media (max-width:720px){
+            .footer{
+            text-align:left;
+            padding:5%;
+            }
+            .footer .row ul li{
+            display:block;
+            margin:10px 0px;
+            text-align:left;
+            }
+            .footer .row a i{
+            margin:0% 3%;
+            }
+            }
+            
+            </style>
+            <div class="mycontainer">
+
+            
+	</head>
+
+	<body>
+		<!-- Header Section -->
+		<header>
+			<div id = "logo"> 					<!-- div is a divider/ section list -->
+				<img src = "./assests/E.png" alt = "Logo" width="200"  height="200">
+			</div>
+
+			<nav> 								<!-- Nav -  is nevigation -->
+				<ul> 							<!-- ul - unorderd list -->
+					<a href = "homepage.html"> Home </a>			<!-- li - orderd list -->
+					<a href = "aboutus.html"> About Us </a>
+                    <a href = "courses.html"> Courses </a>
+                    <a href = "registration.html"> Registration </a>
+                    <a href = "enquiry.html"> Enquiry </a>
+                    <a href = "contactus.html"> Contact Us </a>
+					
+				</ul>
+
+			</nav>
+		</header>
+		<!-- Main Content Section --> 		 <!-- the main is the one that change in the different webpages -->
+		<main>
+			<section id = "Summary">
+                <div>
+				<h1> About Us </h1>
+                </div>
+                <div>
+                    <h2></h2>
+                    <p></p>
+                   <p></p>
+             </div>
+                
+            
+			</section>
+            <section>
+                <div class="row">
+                    <div class="column">
+                      <img src="./assests/XHAW 9.jpg" alt="Students" style="width:100%">
+                    </div>
+                    <div class="column">
+                      <p>
+                        <h2 class="h2a"> Welcome to Empowering The Nation</h2>
+
+                        <h3> About Empowering The Nation</h3>
+                        Empowering The Nation is a local small to mid-size enterprise, 
+                        a initiative by Precious Radebe to provide skills training for 
+                        domestic workers and gardeners.<br>
+
+                        <section>
+                            <p>
+                            Empowering the Nation was established in 2018 and offers courses in Johannesburg to
+                            hundreds of domestic workers and gardeners on both the : <br>
+                            <b>Six - Month Long Learnerships</b> and <br>
+                            <b>Six - Week Short Skills Training</b>.<br>
+                            </p>
+                        
+                        <p>
+                            Empowering The Nation's training provides upskills to domestic workers and gardeners 
+                            by making them more marketable when seeking employment and also enables them to be paid 
+                            at a higher rate because of these additional skills they posses.<br>
+                        </p>   
+
+                        <p>
+                            The training school offers opportunities of  becoming your own entrepreneur and 
+                            setting up your own small business utilising these newly obtained skills. 
+                            Moving towards the goal of filling the occupational vacuum there is regarding 
+                            many employers requiring their employees to be upskilled to offer more skilled 
+                            services of the job.<br>
+
+                        </p>       
+                        </section>
+                        
+                        <h2 class="h2a"> Our Programs</h2>
+                        <p> The <b>Six - Months</b> programmes take place over <b>Tweleve Weeks</b> and the short courses take <b>Six weeks</b></p>
+                        
+                        <h3>Six - Months</h3>
+                        <ul>
+                        <li> First Aid</li>
+                        <li> Sewing </li>
+                        <li> Landscaping </li>
+                        <li> Life Skills </li>
+                        </ul>
+
+                        <h3>Six - week</h3>
+                        <ul>
+                        <li> Child Minding</li>
+                        <li> Cooking </li>
+                        <li> Garden Maintenance</li>
+                        </ul>
+
+
+                <section>
+                        <h2 class="h2a"> Motivation</h2>
+                    <p>
+                            Precious was inspired to start this business by her parents and other elderly 
+                            relatives who were never given the chance to upskill themselves or follow a formal 
+                            educational qualification, so in starting this business she offers the opportunity 
+                            to similarly affected members from her community.<br>
+                    </p>
+                    </div>
+                    
+                  </div>
+            </section>
+			
+		</main>
+		<!-- Footer Section -->
+		<footer>
+            <div class="footer">
+                
+                <div class="row">
+                <ul>
+                    <li><a href="homepage.html">Home Page</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                </div>
+                
+                <div class="row">
+                    <p><h2>Contact Info</h2></p>
+                    <p> Email: EmpoweringTheNation@gmail.com</p>
+                    <p>Phone: +27 (555) -4567</p>
+                &copy; 2024 Empowering The Nation.edu - All rights reserved || Designed By: 
+                </div>
+		</footer>
+
+	</body>
+
+</html>

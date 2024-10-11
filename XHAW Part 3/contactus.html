@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+		<title> HomePage </title>
+		<!-- above line must be edited on the different webpages -->
+        <style>
+            *{
+             box-sizing: border-box;
+             margin: 0;
+            padding: 0;
+            }
+            .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+            }
+            /* Clearfix (clear floats) */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+                color: #333;
+                padding: 20px;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background:#000000;
+                color: #ffffff;
+                padding: 20px 0;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+            }
+            h1{
+                color: #000000;
+                text-align: center;
+                font-size: 50px;
+
+            }
+            h2{
+                color: #ffffff;
+
+            }
+            .h2a{
+                color: #000000 ;
+                text-align: left;
+            }
+            h3{
+                color: #f0e68c;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            nav a {
+                color: #ffffff;
+                text-decoration: none;
+                margin: 0 15px;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            body{
+            margin:0;
+            overflow-x:hidden;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 30px;
+                padding-left: 150px;
+                border-radius: 8px;
+            }
+            .contact-info {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+            .info {
+                padding: 20px;
+                border-radius: 8px;
+                text-align: center;
+            }
+            p {
+                margin-bottom: 5px;
+            }
+            a {
+                color: #f0e68c;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .footer{
+            background:#000000 ;
+            padding:30px 0px;
+            text-align:center;
+            }
+            .footer .row{
+            width:100%;
+            margin:1% 0%;
+            padding:0.6% 0%;
+            color:#ffffff;
+            font-size:0.8em;
+            }
+            .footer .row a{
+            text-decoration:none;
+            color:#ffffff;
+            transition:0.5s;
+            }
+            .footer .row a:hover{
+            color:#000000;
+            }
+            .footer .row ul{
+            width:100%;
+            }
+            .footer .row ul li{
+            display:inline-block;
+            margin:0px 30px;
+            }
+            .footer .row a i{
+            font-size:2em;
+            margin:0% 1%;
+            }
+            @media (max-width:720px){
+            .footer{
+            text-align:left;
+            padding:5%;
+            }
+            .footer .row ul li{
+            display:block;
+            margin:10px 0px;
+            text-align:left;
+            }
+            .footer .row a i{
+            margin:0% 3%;
+            }
+            }
+            
+            </style>
+            <div class="mycontainer">
+
+            
+	</head>
+
+	<body>
+		<!-- Header Section -->
+		<header>
+			<div id = "logo"> 					<!-- div is a divider/ section list -->
+				<img src = "./assests/E.png" alt = "Logo" width="200"  height="200">
+			</div>
+
+			<nav> 								<!-- Nav -  is nevigation -->
+				<ul> 							<!-- ul - unorderd list -->
+					<a href = "homepage.html"> Home </a>			<!-- li - orderd list -->
+					<a href = "aboutus.html"> About Us </a>
+                    <a href = "courses.html"> Courses </a>
+                    <a href = "registration.html"> Registration </a>
+                    <a href = "enquiry.html"> Enquiry </a>
+                    <a href = "contactus.html"> Contact Us </a>
+					
+				</ul>
+
+			</nav>
+		</header>
+		<!-- Main Content Section --> 		 <!-- the main is the one that change in the different webpages -->
+		<main>
+			<section id = "Summary">
+            <div>
+                <h1>Contact Us</h1>
+             </div>          
+			</section>
+            
+            <section>
+                <div class="row">                  
+                    <div class="column">
+                       
+                        <div class="container">
+                            <div class="contact-info">
+                                <div class="info">
+                                    <h2 class="h2a">Phone</h2><br>
+                                    <p>+27 (555) -4567</p><br>
+                                
+                                    <h2 class="h2a">Email</h2><br>
+                                    <p><a href="EmpoweringTheNation@gmail.com">EmpoweringTheNation@gmail.com</a></p><br>
+                                
+                                    <h2 class="h2a">Address</h2><br>
+                                    <p> 88 Marshall Street First Floor, Samancor House, Marshalltown, Johannesburg </p><br>
+                                    <p> Lone Creek Cresent & Magwa Cresent, Waterfall City, Mall of Africa,Shop 2067 Midrand 1685 </p><br>
+                                    <p> Elias Motsoaledi Road Dobsonville 1863 </p><br>
+                               
+                                    <h2 class="h2a">Working Hours</h2><br>
+                                    <p><b>Monday - Friday:</b><br> 
+                                        8:00 AM - 5:00 PM</p><br>
+                                    <p><b>Saturday - Sunday:</b><br> 
+                                        Closed</p><br>
+                                </div>
+                            </div>
+                        </div>
+            </section>
+			
+		</main>
+		<!-- Footer Section -->
+		<footer>
+            <div class="footer">
+                
+                <div class="row">
+                <ul>
+                    <li><a href="homepage.html">Home Page</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+                </div>
+                
+                <div class="row">
+                    <p><h2>Contact Info</h2></p>
+                    <p> Email: EmpoweringTheNation@gmail.com</p>
+                    <p>Phone: +27 (555) -4567</p>
+                &copy; 2024 Empowering The Nation.edu - All rights reserved || Designed By: 
+                </div>
+		</footer>
+
+	</body>
+
+</html>
